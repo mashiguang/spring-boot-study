@@ -5,6 +5,7 @@ mvnw.cmd
 target/
 
 *.class
+*.bak
 
 # Log file
 *.log
@@ -16,7 +17,7 @@ target/
 .mtj.tmp/
 
 # Package Files #
-*.jar
+# *.jar
 *.war
 *.ear
 *.zip
