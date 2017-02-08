@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Reading List</title>
+	<link rel="stylesheet" th:href="@{/style.css}"/>
+</head>
+<body>
+	<h2>your reading list</h2>
+	<div th:unless="${#lists.isEmpty(books)}">
+		<dl th:each="book : ${books}">
+			<dt class="bookHeadline">
+				<!--<span th:text="${book.title}">title</span>-->
+                <a th:href="'http://cn.bing.com/search?q='+${amazonId}" th:text="${book.title}">title</a>
+				<span th:text="${book.author}">author</span>
+				(isbn: <span th:text="${book.isbn}">isbn</span>)
+			</dt>
+			<dd class="bookDescription">
+				<span th:if="${book.description}" th:text="${book.description}">description</span>
+				<span th:if="${book.description eq null}">no description available</span>
+			</dd>
+		</dl>
+	</div>
+
+	<div th:if="${#lists.isEmpty(books)}">
+		<p>you have no books in your book list</p>
+	</div>
+
+	<hr />
+
+	<h3>add a book</h3>
+	<form action="" method="post">
+		<label for="title">title:</label>
+		<input type="text" name="title" />
+
+		<label for="author">author:</label>
+		<input type="text" name="author" />
+
+		<label for="isbn">isbn:</label>
+		<input type="text" name="isbn" />
+		<br />
+		
+		<label for="description">description:</label>
+		<textarea name="description" id="" cols="80" rows="5"></textarea>
+		<br />
+
+		<input type="submit" />
+	</form>
+</body>
+</html>
