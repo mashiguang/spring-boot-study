@@ -24,7 +24,8 @@ public class SimpleJpaApplication implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
-        journalService.insertData();
+        //使用data.sql代替insertData()方法
+        //journalService.insertData();
 
         journalService.findAll().forEach(entry -> log.info(entry.getTitle()));
     }

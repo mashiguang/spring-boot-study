@@ -19,6 +19,8 @@ public class JournalService {
     @Autowired
     private JournalRepository repo;
 
+    /**使用data.sql代替此方法*/
+    @Deprecated
     public void insertData() {
         log.info("> Inserting data...");
         repo.save(new Journal("Get to know Spring Boot", "Today I will learn Spring Boot", new Date()));
