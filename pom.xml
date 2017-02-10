@@ -21,6 +21,8 @@
         <module>reading-list-thymeleaf</module>
         <module>simple-jdbc-app</module>
         <module>simple-jpa-app</module>
+        <module>spring-boot-journal</module>
+        <module>spring-boot-journal-secure</module>
     </modules>
 
     <build>
