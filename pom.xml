@@ -18,6 +18,7 @@
 
     <modules>
         <module>reading-list-jsp</module>
+        <module>reading-list-jsp-grunt</module>
         <module>reading-list-thymeleaf</module>
         <module>simple-jdbc-app</module>
         <module>simple-jpa-app</module>

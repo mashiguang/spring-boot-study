@@ -1,6 +1,7 @@
 .mvn/
 
 target/
+node_modules/
 
 *.class
 *.bak

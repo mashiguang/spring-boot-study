@@ -1,0 +1,9 @@
+<div class="btn-group">
+	<ui-select ng-model=ngModel theme="bootstrap"  on-select="loadSchools($item)"
+		style="min-width:250px;width:'resolve'"> <ui-select-match
+		placeholder="{{'100003' | translate}}">{{$select.selected.name}}</ui-select-match>
+	<ui-select-choices repeat="sl.id as sl  in schools | filter: $select.search  track by sl.id"
+		group-by="'provinceName'"> {{sl.name }} </ui-select-choices> </ui-select>
+</div>
+
+

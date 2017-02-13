@@ -1,0 +1,25 @@
+{
+  "name": "nd2015",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "angular-xeditable": "0.0.1",
+    "angular-xeditable-npm": "^0.1.9",
+    "grunt": "^0.4.5",
+    "grunt-cache-busting": "0.0.11",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-replace": "^0.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

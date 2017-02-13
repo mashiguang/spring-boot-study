@@ -1,0 +1,18 @@
+
+<div class="btn-group">
+	<ui-select ng-model="ngModelSchool" theme="bootstrap" 
+		style="min-width:250px;width:'resolve'" on-select="loadSchools($item)"> <ui-select-match
+		placeholder="{{'100003' | translate}}">{{$select.selected.name}}</ui-select-match>
+	<ui-select-choices repeat="sl.id as sl  in schools | filter: $select.search track by sl.id"
+		group-by="'provinceName'"> {{sl.name }} </ui-select-choices> </ui-select>
+</div>
+
+<div class="btn-group">
+	<ui-select ng-model="ngModelSchoolClass" theme="bootstrap" on-select="loadClasss($item)"
+		style="min-width:250px;width:'resolve'"> <ui-select-match
+		placeholder="{{'100004' | translate}}">{{$select.selected.name}}</ui-select-match>
+	<ui-select-choices repeat="sc.id as sc  in schoolClasses | filter: $select.search  track by sc.id"
+		group-by="'schoolName'"> {{sc.name }} </ui-select-choices> </ui-select>
+</div>
+
+
