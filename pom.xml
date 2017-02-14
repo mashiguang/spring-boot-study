@@ -24,6 +24,7 @@
         <module>simple-jpa-app</module>
         <module>spring-boot-journal</module>
         <module>spring-boot-journal-secure</module>
+        <module>spring-boot-journal-mongo</module>
     </modules>
 
     <build>
