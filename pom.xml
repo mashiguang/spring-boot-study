@@ -25,6 +25,7 @@
         <module>spring-boot-journal</module>
         <module>spring-boot-journal-secure</module>
         <module>spring-boot-journal-mongo</module>
+        <module>hello-docker</module>
     </modules>
 
     <build>
